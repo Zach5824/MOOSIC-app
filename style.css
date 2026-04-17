@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(back3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+header h1{
+    font-family: Supermercado One;
+    font-size: 2.5em;
+    color: #1db954;
+    
+}
+header p {
+    font-family:Barlow Condensed;
+    font-size: 1.2em;
+    color: #b3b3b3;
+}
+
+#searchbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 500px;
+    font-weight: bold;
+}
+#search-button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1db954; /* Green accent */
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#mood-input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #1db954; /* Green accent */
+    background-color: #181818;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+#music-search:focus {
+    box-shadow: 0 0 10px #1db954;
+}
+
+#music-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.music-card {
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #1db954 2px solid;
+}
+
+.music-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+audio {
+    width: 90%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+}
